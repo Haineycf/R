@@ -1,0 +1,7 @@
+library(ggplot2)
+set.seed(1234)
+x<-rnorm(1000, mean=-5) 
+#plot(density(x))
+#ggplot() + aes(x = x) + geom_density()
+#qplot(x)
+qplot(x, geom = "density")
